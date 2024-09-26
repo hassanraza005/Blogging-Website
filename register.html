@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style/register.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#f8f9fa]">
+    <div class="navbar px-5 bg-[#7749f8] text-white bg-base-100">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl">Register</a>
+        </div>
+        <div class="flex-none gap-2">
+            <a class="btn btn-ghost nav-username text-xl"></a>
+            <div class="dropdown items-center dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img alt="Tailwind CSS Navbar component"
+                            src="https://png.pngtree.com/png-vector/20220608/ourmid/pngtree-man-avatar-isolated-on-white-background-png-image_4891418.png" />
+                    </div>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li class="dashboardBtn"><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="h-[100vh] flex justify-center p-5 items-center">
+        <div class="max-w-xl w-[512px]">
+            <h1 class="text-3xl text-center font-semibold text-black mt-5 mb-5">Register</h1>
+            <div class="bg-white my-box-shadow rounded-lg p-[2.25rem]">
+                <form id="registerForm">
+                    <input id="registerFirstName" type="text" placeholder="Enter your firstname"
+                        class="input bg-white input-bordered w-[100%]" required minlength="3" maxlength="20" />
+                    <input id="registerLastName" type="text" placeholder="Enter your lastname"
+                        class="input mt-3 bg-white input-bordered w-[100%]" required minlength="1" maxlength="20" />
+                    <input id="registerEmail" type="email" placeholder="Enter your email"
+                        class="input mt-3 bg-white input-bordered w-[100%]" required />
+                    <input id="registerPassword" type="password" placeholder="Enter your password"
+                        class="input mt-3 bg-white input-bordered w-[100%]" required minlength="8"/>
+                    <input id="registerRePassword" type="password" placeholder="Repeat your password"
+                        class="input mt-3 bg-white input-bordered w-[100%]" required minlength="8" />
+                        <div class="text-center mt-3">
+                            <input id="file" type="file" class="file-input bg-white custom-file-input input-bordered file-input-primary w-[100%] max-w-xs" required/>
+                        </div>
+                    <div class="text-center">
+                        <button class="btn bg-[#7749f8] mt-[1rem] text-white border-[#4c68ff] hover:bg-[#6128ff]" type="submit">Sign up</button>
+                        <p class="mt-3 text-[#4c68ff]"><a href="login.html">Already a user? Login here!</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./app/register.js"></script>
+</body>
+
+</html>

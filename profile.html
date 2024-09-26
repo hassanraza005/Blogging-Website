@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./style/profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link ref="stylesheet" type="text/css" href="dist/snackbar.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="min-height: 100vh;" class="bg-[#f8f9fa]">
+    <div id="snackbar">Blog posted!</div>
+    <div class="navbar px-5 bg-[#7749f8] text-white bg-base-100">
+        <div class="flex-1">
+            <a href="index.html" class="btn text-white cursor-pointer bg-[#7749f8] border-none hover:bg-[#7749f8] text-xl">Blogging App</a>
+        </div>
+        <div class="flex-none gap-2">
+            <a class="btn btn-ghost nav-username text-xl"></a>
+            <div class="dropdown items-center dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img id="pfp" alt="Tailwind CSS Navbar component"
+                            src="https://png.pngtree.com/png-vector/20220608/ourmid/pngtree-man-avatar-isolated-on-white-background-png-image_4891418.png" />
+                    </div>
+                </div>
+                <ul tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li class="dashboardBtn"><a href="index.html">Home</a></li>
+                <li class="dashboardBtn"><a href="dashboard.html">Dashboard</a></li>
+                <li class="nav-logout-btn"><a>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="p-[1.5rem] bg-white">
+        <div class="my-container">
+                <h1 class="text-black font-semibold text-2xl">Profile</h1>
+        </div>
+    </div>
+    <div class="my-container">
+        <div class="p-[2rem] profile-wrapper w-full bg-white mt-5 gap-4rounded-xl gap-[1.25rem]">
+            <div class="text-center mt-[3rem]">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./app/profile.js"></script>
+    <script src="https://kit.fontawesome.com/e686848577.js" crossorigin="anonymous"></script>
+</body>
+</html>

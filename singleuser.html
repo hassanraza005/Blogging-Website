@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single User</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="min-height: 100vh;" class="bg-[#f8f9fa]">
+    <div class="navbar px-5 bg-[#7749f8] text-white bg-base-100">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl">Blogging App</a>
+        </div>
+        <div class="flex-none gap-2">
+            <a class="btn btn-ghost nav-username text-xl"></a>
+            <div class="dropdown items-center dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img id="pfp" alt="Tailwind CSS Navbar component"
+                            src="https://png.pngtree.com/png-vector/20220608/ourmid/pngtree-man-avatar-isolated-on-white-background-png-image_4891418.png" />
+                    </div>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li style="display: none;" class="profileBtn">
+                        <a href="profile.html" class="justify-between">
+                            Profile
+                        </a>
+                    </li>
+                    <li style="display: none;" class="dashboardBtn"><a href="dashboard.html">Dashboard</a></li>
+                    <li style="display: none;" class="nav-login-btn"><a href="login.html">Login</a></li>
+                    <li style="display: none;" class="nav-logout-btn"><a>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="p-[1.5rem] bg-white">
+        <div class="my-container">
+            <h1 class="font-bold cursor-pointer text-2xl text-[#7749f8]"><a href="index.html">&lt; Back to All Blogs</a></h1>
+        </div>
+    </div>
+    <div class="my-container">
+        <h1 class="text-black font-semibold my-5 text-xl">All blogs</h1>
+        <div class="flex gap-x-[2rem] justify-between">
+            <div class="flex max-w-[64rem] w-[64rem] gap-[1.25rem] flex-col">
+                <div id="my-blog-wrapper" class="p-[1.3rem] flex flex-col rounded-xl bg-white">
+                    <div class="text-center mt-[3rem]">
+                        <span class="loading loading-spinner loading-lg"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+                <div class="flex mb-5 justify-center">
+                    <div class="group">
+                        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+                        <input placeholder="Search" type="search" class="input-search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./app/singleuser.js"></script>
+    <script src="https://kit.fontawesome.com/e686848577.js" crossorigin="anonymous"></script>
+</body>
+</html>
